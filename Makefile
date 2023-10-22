@@ -1,7 +1,7 @@
 PACKAGES:=xorg-dev libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev pkg-config libxmu-dev libxi-dev libgl-dev
 EXEC_NAME:=Game
 
-default: compile
+default: run
 
 run: compile
 	./build/$(EXEC_NAME)
@@ -29,5 +29,5 @@ clone-vcpkg:
 bootstrap-vcpkg:
 	./vcpkg/bootstrap-vcpkg.sh
 
-clear:
+clean:
 	rm -r ./build/
