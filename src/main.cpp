@@ -241,7 +241,9 @@ public:
     static void event_loop_triangle_with_brickwall_texture(GLFWwindow *window)
     {
         shader s{SHADER_DIR "vertex-texture.glsl", SHADER_DIR "fragment-texture.glsl"};
-        auto [triangle_vertex_array, brickwall_texture] = Examples::triangle_with_brickwall_texture();
+        auto res{Examples::triangle_with_brickwall_texture()};
+        uint32_t triangle_vertex_array{res.vao};
+        uint32_t brickwall_texture{res.texture};
         while (!glfwWindowShouldClose(window))
         {
             glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
