@@ -7,6 +7,7 @@ add_executable(${CMAKE_PROJECT_NAME}
     src/shader/shader.cpp
     src/debug/opengl_debug.cpp
     src/util/file_operations.cpp
+    src/libport/stb_image.cpp
 )
 configure_file(
     ${CMAKE_CURRENT_SOURCE_DIR}/configuration/assets.hpp.in

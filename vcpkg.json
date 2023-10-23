@@ -1,7 +1,4 @@
 {
-    "name": "game",
-    "dependencies": [
-        "glfw3",
-        "glew"
-    ]
+  "name": "game",
+  "dependencies": ["glfw3", "glew", "stb"]
 }
